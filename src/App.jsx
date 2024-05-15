@@ -1,11 +1,34 @@
 import { useState, useRef } from 'react';
 
+/**
+ * Defines the main application component that handles media streaming and Picture in Picture functionality.
+ */
 function App() {
+  /**
+   * @const {MediaStream|null} mediaStream - Holds the current media stream, or null if no stream is active.
+   */
   const [mediaStream, setMediaStream] = useState(null);
+
+  /**
+   * @const {boolean} showStartPipButton - Controls visibility of the 'Start Picture in Picture' button.
+   */
   const [showStartPipButton, setShowStartPipButton] = useState(false);
+
+  /**
+   * @const {boolean} isPipActive - Tracks whether Picture in Picture mode is currently active.
+   */
   const [isPipActive, setIsPipActive] = useState(false);
+
+  /**
+   * @const {Object} videoElement - Ref to the video DOM element used for media streaming.
+   */
   const videoElement = useRef(null);
 
+  /**
+   * Asynchronously selects a media stream to display and sets up initial state for PiP functionality.
+   * @async
+   * @returns {Promise<void>} - A Promise that resolves when the stream is successfully selected.
+   */
   async function selectMediaStream() {
     try {
       const stream = await navigator.mediaDevices.getDisplayMedia();
@@ -17,6 +40,10 @@ function App() {
     }
   }
 
+  /**
+   * Handles initiation of Picture in Picture mode after starting the media playback.
+   * @returns {Promise<void>} - A Promise that resolves when PiP has started or an error has occurred.
+   */
   function handleStartPip() {
     videoElement.current.play().then(() => {
       videoElement.current
@@ -31,6 +58,10 @@ function App() {
     });
   }
 
+  /**
+   * Stops the Picture in Picture mode and the media stream, resetting the application state.
+   * @returns {void}
+   */
   function stopPictureInPicture() {
     if (mediaStream) {
       mediaStream.getTracks().forEach((track) => track.stop());
