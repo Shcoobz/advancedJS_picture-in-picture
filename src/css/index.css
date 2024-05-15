@@ -52,6 +52,9 @@ button:active {
 }
 
 /* Styling for the video element */
-#video {
-  display: none;
+.hiddenVideo {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  top: -1000px;
 }
