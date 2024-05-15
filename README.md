@@ -1,5 +1,7 @@
 # react_Picture in Picture: [LIVE DEMO](https://shcoobz.github.io/react_picture-in-picture/)
 
+![react_Picture in Picture](public/img/react_picture-in-picture.png)
+
 ## Summary
 
 react_Picture in Picture provides a simple and effective way to manage screen sharing and Picture in Picture functionality within a React application. It features an intuitive interface that allows users to start and stop media streams and to control Picture in Picture mode seamlessly.
