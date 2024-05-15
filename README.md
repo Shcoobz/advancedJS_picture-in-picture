@@ -1,6 +1,6 @@
 # react_Picture in Picture: [LIVE DEMO](https://shcoobz.github.io/react_picture-in-picture/)
 
-![react_Picture in Picture](public/img/react-picture-in-picture.png)
+![react_Picture in Picture](public/img/react_picture-in-picture.png)
 
 ## Summary
 
