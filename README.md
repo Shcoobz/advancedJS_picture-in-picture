@@ -1,10 +1,10 @@
-# react_Picture in Picture: [LIVE DEMO](https://shcoobz.github.io/react_picture-in-picture/)
+# advancedJS_Picture in Picture: [LIVE DEMO](https://shcoobz.github.io/advancedJS_picture-in-picture/)
 
-![react_Picture in Picture](public/img/react_picture-in-picture.png)
+![advancedJS_Picture in Picture](public/img/advancedJS_picture-in-picture.png)
 
 ## Summary
 
-react_Picture in Picture provides a simple and effective way to manage screen sharing and Picture in Picture functionality within a React application. It features an intuitive interface that allows users to start and stop media streams and to control Picture in Picture mode seamlessly.
+advancedJS_Picture in Picture provides a simple and effective way to manage screen sharing and Picture in Picture functionality within a React application. It features an intuitive interface that allows users to start and stop media streams and to control Picture in Picture mode seamlessly.
 
 The core functionality includes:
 
@@ -40,6 +40,6 @@ Efficiently manages the media stream lifecycle, including starting, stopping, an
 
 ---
 
-_Note: This document provides an overview of react_Picture in Picture. For detailed instructions and more information, please refer to the source code documentation._
+_Note: This document provides an overview of advancedJS_Picture in Picture. For detailed instructions and more information, please refer to the source code documentation._
 
 _This project is a conversion from an earlier version built with vanilla JavaScript and HTML, available [here](https://github.com/Shcoobz/basicJS_picture-in-picture/). This conversion integrates React to enhance UI reactivity and maintainability._

@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/react_picture-in-picture/',
+  base: '/advancedJS_picture-in-picture/',
   build: {
     outDir: 'build',
   },
